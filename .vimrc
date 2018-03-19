@@ -62,6 +62,9 @@ set foldlevel=99
 " Enable folding with via the space bar
 nnoremap <space> za
 
+" Enable SimpylFold python docstring preview
+let g:SimpylFold_docstring_preview=1
+
 " vim-plugin configuration
 call plug#begin('~/.vim/plugged')
 
