@@ -47,13 +47,20 @@ set number
 " column
 set ruler
 
-" Sometimes vim will ues the system bell to beep at you. Don't let it.
+" Sometimes vim will use the system bell to beep at you. Don't let it.
 set noerrorbells
 set t_vb=
+
 " Vim can use a visual bell instead. I'm allowing it here - you can set this
 " to novisualbell instead to disallow it.
 set visualbell
 
+" Enable code folding
+set foldmethod=indent
+set foldlevel=99
+
+" Enable folding with via the space bar
+nnoremap <space> za
 
 " vim-plugin configuration
 call plug#begin('~/.vim/plugged')
