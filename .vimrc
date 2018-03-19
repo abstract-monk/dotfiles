@@ -65,6 +65,16 @@ nnoremap <space> za
 " Enable SimpylFold python docstring preview
 let g:SimpylFold_docstring_preview=1
 
+" add python pep8 indentation etc
+au BufNewFile, BufRead *.py
+    \ set tabstop=4
+    \ set softtabstop=4
+    \ set shiftwidth=4
+    \ set textwidth=79
+    \ set expandtab
+    \ set autoindent
+    \ set fileformat=unix
+
 " vim-plugin configuration
 call plug#begin('~/.vim/plugged')
 
