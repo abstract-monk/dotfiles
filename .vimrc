@@ -32,6 +32,7 @@ set hidden
 " automatically inserted indentation, or even over where you started editing
 " in insert mode. This makes backspace behave as you'd expect in any other
 " program.
+set backspace=2
 set backspace=indent,eol,start
 
 " Show a bottom bar that lets you see what you're typing as you enter commands
@@ -65,15 +66,16 @@ nnoremap <space> za
 " Enable SimpylFold python docstring preview
 let g:SimpylFold_docstring_preview=1
 
-" add python pep8 indentation etc
-au BufNewFile, BufRead *.py
-    \ set tabstop=4
-    \ set softtabstop=4
-    \ set shiftwidth=4
-    \ set textwidth=79
-    \ set expandtab
-    \ set autoindent
-    \ set fileformat=unix
+" Convert tabs to spaces, set indent
+set expandtab
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+
+" Set smaller indent of html and javascript 
+autocmd FileType html setlocal shiftwidth=2 tabstop=2 softtabstop=2
+autocmd FileType htmldjango setlocal shiftwidth=2 tabstop=2 softtabstop=2
+autocmd FileType javascript setlocal shiftwidth=2 tabstop=2 softtabstop=2
 
 " vim-plugin configuration
 call plug#begin('~/.vim/plugged')
