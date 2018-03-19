@@ -1,5 +1,5 @@
 " vimrc
-
+" Chris Monk
 " vim-plugin configuration
 call plug#begin('~/.vim/plugged')
 
