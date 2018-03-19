@@ -74,4 +74,8 @@ Plug 'scrooloose/nerdtree'
 " duplicate nerdtree across all tabs
 Plug 'jistr/vim-nerdtree-tabs'
 
+" simplyfold
+Plug 'tmhedberg/SimpylFold'
+
 call plug#end()
+
