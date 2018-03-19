@@ -77,6 +77,12 @@ autocmd FileType html setlocal shiftwidth=2 tabstop=2 softtabstop=2
 autocmd FileType htmldjango setlocal shiftwidth=2 tabstop=2 softtabstop=2
 autocmd FileType javascript setlocal shiftwidth=2 tabstop=2 softtabstop=2
 
+" Open NERDTree automatically on startup
+autocmd vimenter * NERDTree
+
+" Map ctrl+n to open NERDTree
+map <C-n> :NERDTreeToggle<CR>
+
 " vim-plugin configuration
 call plug#begin('~/.vim/plugged')
 
@@ -86,8 +92,14 @@ Plug 'bling/vim-airline'
 " nerdtree
 Plug 'scrooloose/nerdtree'
 
+" show git status of files in your nerdtree
+Plug 'Xuyuanp/nerdtree-git-plugin'
+
 " duplicate nerdtree across all tabs
 Plug 'jistr/vim-nerdtree-tabs'
+
+" Comment out passages with a key command
+Plug 'scrooloose/nerdcommenter'
 
 " simpylfold
 Plug 'tmhedberg/SimpylFold'
