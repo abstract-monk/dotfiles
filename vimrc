@@ -1,5 +1,27 @@
-" This is a basic vimrc with sane defaults that pretty much all vim users
-" agree on.
+" vimrc
+
+" vim-plugin configuration
+call plug#begin('~/.vim/plugged')
+
+" vim airline
+Plug 'bling/vim-airline'
+
+" nerdtree
+Plug 'scrooloose/nerdtree'
+
+" show git status of files in your nerdtree
+Plug 'Xuyuanp/nerdtree-git-plugin'
+
+" duplicate nerdtree across all tabs
+Plug 'jistr/vim-nerdtree-tabs'
+
+" Comment out passages with a key command
+Plug 'scrooloose/nerdcommenter'
+
+" simpylfold
+Plug 'tmhedberg/SimpylFold'
+
+call plug#end()
 
 " Tell vim that it shouldn't try to behave like its predecessor, vi. This
 " option needs to be set first, because it changes the behavior of other
@@ -83,26 +105,4 @@ autocmd vimenter * NERDTree
 " Map ctrl+n to open NERDTree
 map <C-n> :NERDTreeToggle<CR>
 
-" vim-plugin configuration
-call plug#begin('~/.vim/plugged')
-
-" vim airline
-Plug 'bling/vim-airline'
-
-" nerdtree
-Plug 'scrooloose/nerdtree'
-
-" show git status of files in your nerdtree
-Plug 'Xuyuanp/nerdtree-git-plugin'
-
-" duplicate nerdtree across all tabs
-Plug 'jistr/vim-nerdtree-tabs'
-
-" Comment out passages with a key command
-Plug 'scrooloose/nerdcommenter'
-
-" simpylfold
-Plug 'tmhedberg/SimpylFold'
-
-call plug#end()
 
