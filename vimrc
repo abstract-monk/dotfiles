@@ -100,7 +100,7 @@ autocmd FileType htmldjango setlocal shiftwidth=2 tabstop=2 softtabstop=2
 autocmd FileType javascript setlocal shiftwidth=2 tabstop=2 softtabstop=2
 
 " Open NERDTree automatically on startup
-autocmd vimenter * NERDTree
+" autocmd vimenter * NERDTree
 
 " Map ctrl+n to open NERDTree
 map <C-n> :NERDTreeToggle<CR>
